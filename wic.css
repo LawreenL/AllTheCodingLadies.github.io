@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(177, 104, 153);
+    font-family:'Futura';
+    font-size:16px;
+    text-align: center;
+}
+h1,h2,.clickable {
+    color:rgb(199, 124, 124);
+    font-family:'Gill Sans';
+    font-size: 35px;
+}
+a{
+    color:rgb(199, 124, 124);
+    font-family:'Gill Sans';
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    width: 210px;
+}
+footer{
+    font-size: 12px;
+    position: relative;
+    margin:0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clear: both;
+}
