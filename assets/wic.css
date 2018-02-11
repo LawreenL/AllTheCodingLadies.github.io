@@ -132,7 +132,7 @@ input {
   left: 0%;
   right: 0%;
   bottom: 0px;
-  z-index: 10;
+  z-index: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
   color: #000;
@@ -153,7 +153,19 @@ input {
     background-image: none;
 }
 .app{
+<<<<<<< HEAD
+    width: 50%;
+    height: 50%;
+
+}
+.item{
+padding-left: 100px;
+padding-right: 190px;
+padding-top: 50px;
+}
+=======
     width: 30%;
     height: 30%;
     
 }
+>>>>>>> origin/master
