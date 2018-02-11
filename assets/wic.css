@@ -1,18 +1,21 @@
 body {
     background-color: rgb(255, 255, 255);
     color: rgb(177, 104, 153);
-    font-family:'Futura';
+    font-family:'Verdana';
     font-size:16px;
     text-align: center;
+    background-image: 'images/giphy.gif';
+    background-size:cover; 
+    
 }
-h1,h2,.clickable {
+h1{
     color:rgb(199, 124, 124);
     font-family:'Gill Sans';
     font-size: 35px;
 }
 a{
     color:rgb(199, 124, 124);
-    font-family:'Gill Sans';
+    font-family:'Arial Black';
     font-size: 18px;
     text-decoration: none;
     display: inline-block;
@@ -35,7 +38,7 @@ footer{
     margin-right: auto;
     width:500px;
     border:5px solid rgb(199, 124, 124);;
-    color:#333;
+    color:rgb(199, 124, 124);
     background:#fff;
     /* css3 */
     -webkit-border-radius:10px;
@@ -74,9 +77,8 @@ footer{
     margin-right: auto;
     padding:30px;
     width: 500px;
-    /* margin:1em 0 3em; */
     border:5px solid rgb(199, 124, 124);
-    color:#333;
+    color:rgb(199, 124, 124);
     background:#fff;
     /* css3 */
     -webkit-border-radius:10px;
@@ -104,11 +106,9 @@ footer{
     right:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
     border-width:13px 13px 0;
     border-style:solid;
-    border-color:#fff transparent;
+    border-color:rgb(199, 124, 124) transparent;
     /* reduce the damage in FF3.0 */
     display:block;
     width:0;
   }
-
-
 input {font-size:12px; width:200px;}
