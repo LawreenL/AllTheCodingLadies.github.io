@@ -5,42 +5,58 @@
       <link rel="icon" href="/favicon.ico" type="image/x-icon">      
     <link rel="stylesheet" type="text/css" href="assets/wic.css"/>
     <title>LV</title>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-    body {
-        position: relative; 
-    }
-    #section1 {padding-top:50px;height:500px;color: rgb(199, 124, 124); background-color: rgb(255, 255, 255);}
-    #section2 {padding-top:50px;height:500px;color: rgb(199, 124, 124); background-color: #ffffff;}
-    #section3 {padding-top:50px;height:500px;color: rgb(199, 124, 124); background-color: #ffffff;}
-    #section41 {padding-top:50px;height:500px;color: rgb(199, 124, 124); background-color: #fdfdfd;}
-    </style>
+      
+      
   </head>
 <body onload="init();">
-        <body data-spy="scroll" data-target=".navbar" data-offset="50">
-                
-                <nav class="navbar navbar-inverse navbar-fixed-top">
-                  <div class="container-fluid">
     <br>
-    <h1><i>All The Coding Ladies</i></h1>
+    <h1>All The Coding Ladies</h1>
     <br><hr/>
-       <div id="a1"><i>
-          <a href="wichacks.html">Home</a>
-        <a href="facts.html">Fun Facts</a>
-        <a href="trivia.html">Trivia</a>
-        <a href="us.html">About Us</a></i></div>
+       <div id="a1">
+          <a href="index.html">Home</a>
+        <a href="notumblr.html">Fun Facts</a>
+        <a href="spotify.html">Trivia</a>
+        <a href="findme.html">About Us</a></div>
   <hr/>
   <br><br><br>
+          
+            
+    
   <div class="content">
-      <p class="triangle-border">HI.</p>
+
+<!--      <button onclick="convert();">Convert!</button>-->
+      
+      
+      <p class="triangle-border"><input id="ti1" value ="Type Something!"/></p>
       <p class="triangle-borderr">
-          <h3>01101000<br>01101001</h3>
+          <input id="ti2"/>
       </p>
+<script>
+          var input = document.getElementById("ti1").value;
+            ti1.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {
+                var output=document.getElementById("ti2");  
+                var input=document.getElementById("ti1").value;
+                output.value = "";
+                for (i=0; i < input.length; i++) {
+     	          output.value +=input[i].charCodeAt(0).toString(2) + " ";
+                }
+            }
+            }); 
+      </script>
+          <!-- <p id="demo"></p>
+          <script>
+              var i=0;
+              var text='01101000 01101001';
+              var speed=50;
+              function typing(){
+                  if (o<text.length){
+                      document.getElementById("demo").innerHTML+=text.charAt(i);
+                      i++;
+                      setTimeout(typing,speed);
+                  }
+              }
+          </script></p> -->
   </div>
   <br>
   <canvas id="demoCanvas" width="500" height="200"></canvas>
