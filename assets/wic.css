@@ -154,15 +154,20 @@ input {
 }
 .app{
     width: 50%;
-    height: 50%;
+    height: auto;
 
 }
 .item{
+    height: auto;
 padding-left: 100px;
 padding-right: 190px;
-padding-top: 50px;
+padding-top: 90px;
+color:rgb(236, 204, 189);
 }
+<<<<<<< HEAD
 .container-fluid4{
     padding-top: 150px;
     
 }
+=======
+>>>>>>> 1dbbde316da7a46b0b39d8617aee462432604206
