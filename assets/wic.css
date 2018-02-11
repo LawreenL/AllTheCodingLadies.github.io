@@ -115,9 +115,7 @@ footer{
 input {
     font-size:12px; width:200px;
 }
-.content{
-    opacity: 100%;
-}
+
  .bey:hover {
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
