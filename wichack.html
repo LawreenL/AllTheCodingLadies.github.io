@@ -25,24 +25,20 @@
     <h1>All The Coding Ladies</h1>
     <br><hr/>
        <div id="a1">
-          <a href="index.html">Home</a>
-        <a href="notumblr.html">Fun Facts</a>
-        <a href="spotify.html">Trivia</a>
-        <a href="findme.html">About Us</a></div>
+          <a href="#section1">Home</a>
+        <a href="#section2">Our App</a>
+        <a href="#section3">Services</a>
+        <a href="#section4">About Us</a></div>
   <hr/>
   <br><br><br>        
     
-  <div class="content">
-
-<!--      <button onclick="convert();">Convert!</button>-->
-      
-      
+  <div class="section1">  
       <p class="triangle-border"><input id="ti1" value ="Type Something!"/></p>
       <br>
       <p class="triangle-borderr">
           <input id="ti2"/>
       </p>
-<script>
+      <script>
           var input = document.getElementById("ti1").value;
             ti1.addEventListener("keydown", function (e) {
             if (e.keyCode === 13) {
@@ -55,27 +51,62 @@
             }
             }); 
       </script>
+<!-- https://stackoverflow.com/questions/14430633/how-to-convert-text-to-binary-code-in-javascript-->
 </div>
 <div id="section2" class="container-fluid">
-  <h1>Section 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <h1>Who Run The World?</h1>
+     <h2>Girls!</h2>
+  <p>Girls can do anything with the right resources. According to research, <br>girls possess many of the qualities needed in coding. They have no differences in attention and memory abilities from men.<br> Unfortunately, current resources that introduce coding to girls are hard to find and intimidating.<br>
+    We want to bring the entirety of it to their fingertips with All The Coding Ladies.</p>
+  <!--https://www.sciencedirect.com/science/article/pii/S1010660X1630088X-->
 </div>
 <div id="section3" class="container-fluid">
-  <h1>Section 3</h1>
+  <h1>All you need to know</h1>
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="la.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="chicago.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="ny.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+    
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-<div id="section41" class="container-fluid">
+<div id="section4" class="container-fluid">
   <h1>Section 4 Submenu 1</h1>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
-<div id="section42" class="container-fluid">
-  <h1>Section 4 Submenu 2</h1>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-</div>
+
      
             
     

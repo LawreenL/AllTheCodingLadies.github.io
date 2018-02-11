@@ -42,6 +42,7 @@ footer{
     -moz-border-radius:10px;
     border-radius:10px;
   }
+
   .triangle-border:before {
     content:"";
     position:absolute;
