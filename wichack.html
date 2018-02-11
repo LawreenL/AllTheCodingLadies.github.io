@@ -37,11 +37,21 @@
     <div class="content"> 
     <div id="section1" class="container-fluid" >
     <div class="section1">
-    <p class="triangle-border"><input id="ti1" value ="Type Something!"/></p>
+    <p class="triangle-border">
+        <input id="ti1" value ="Type something..."  /></p>
           <br>
       <p class="triangle-borderr">
-          <input id="ti2"/>
+          <input id="ti2" value ="And see your text in binary!"/>
       </p>
+        <script>
+            var input = document.getElementById("ti1").value;
+            ti1.addEventListener("click",function(){
+              var output=document.getElementById("ti2");  
+                var input=document.getElementById("ti1");
+                input.value="";
+                /*output.value = ""; */  
+            });
+        </script>
       <script>
           var input = document.getElementById("ti1").value;
             ti1.addEventListener("keydown", function (e) {
