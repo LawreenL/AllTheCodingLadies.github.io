@@ -1,20 +1,8 @@
-var Gimmie = {
-    /* our prior code here */
-    userInput: '',
-    userInputIsValid: false,
-    appId: '',
-    validate: function(input) {
-        // validation happens here
-    },
-}
- 
-Gimmie.$form.on('submit', function(e){
-    /* our previous code here */
-    Gimmie.userInput = $(this).find('input').val();
-    Gimmie.validate();
-    if( Gimmie.userInputIsValid ) {
-        /* make API request */
-    } else {
-        /* throw an error */
+function convert() {
+  var  output=document.getElementById("ti2");  
+  var input=document.getElementById("ti1").value;
+    output.value = "";
+    for (i=0; i < input.length; i++) {
+     	output.value +=input[i].charCodeAt(0).toString(2) + " ";
     }
-});
+}

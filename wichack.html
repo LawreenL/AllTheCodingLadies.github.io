@@ -5,6 +5,15 @@
       <link rel="icon" href="/favicon.ico" type="image/x-icon">      
     <link rel="stylesheet" type="text/css" href="assets/wic.css"/>
     <title>LV</title>
+      
+      <script>function convert() {
+  var  output=document.getElementById("ti2");  
+  var input=document.getElementById("ti1").value;
+    output.value = "";
+    for (i=0; i < input.length; i++) {
+     	output.value +=input[i].charCodeAt(0).toString(2) + " ";
+    }
+}</script>
   </head>
 <body onload="init();">
     <br>
@@ -18,6 +27,11 @@
   <hr/>
   <br><br><br>
   <div class="content">
+      <input id="ti1" value ="TEST"/>
+      <input id="ti2"/>
+      <button onclick="convert();">Convert!</button>
+      
+      
       <p class="triangle-border">HI.</p>
       <p class="triangle-borderr">
           <h3>01101000<br>01101001</h3>

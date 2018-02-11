@@ -132,3 +132,4 @@ footer{
   from, to { border-color: transparent }
   50% { border-color: rgb(199, 124, 124); }
 }
+input {font-size:12px; width:200px;}
