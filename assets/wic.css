@@ -118,3 +118,11 @@ input {
 .content{
     opacity: 100%;
 }
+ .bey:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+ .bey_flip:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
