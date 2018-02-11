@@ -6,14 +6,7 @@
     <link rel="stylesheet" type="text/css" href="assets/wic.css"/>
     <title>LV</title>
       
-      <script>function convert() {
-  var  output=document.getElementById("ti2");  
-  var input=document.getElementById("ti1").value;
-    output.value = "";
-    for (i=0; i < input.length; i++) {
-     	output.value +=input[i].charCodeAt(0).toString(2) + " ";
-    }
-}</script>
+      
   </head>
 <body onload="init();">
     <br>
@@ -26,17 +19,31 @@
         <a href="findme.html">About Us</a></div>
   <hr/>
   <br><br><br>
+          
+            
+    
   <div class="content">
-      <input id="ti1" value ="TEST"/>
-      <input id="ti2"/>
-      <button onclick="convert();">Convert!</button>
-      
-      
-      <p class="triangle-border">HI.</p>
-      <p class="triangle-borderr">
-          <h3>01101000<br>01101001</h3>
-      </p>
 
+<!--      <button onclick="convert();">Convert!</button>-->
+      
+      
+      <p class="triangle-border"><input id="ti1" value ="Type Something!"/></p>
+      <p class="triangle-borderr">
+          <input id="ti2"/>
+      </p>
+<script>
+          var input = document.getElementById("ti1").value;
+            ti1.addEventListener("keydown", function (e) {
+            if (e.keyCode === 13) {
+                var output=document.getElementById("ti2");  
+                var input=document.getElementById("ti1").value;
+                output.value = "";
+                for (i=0; i < input.length; i++) {
+     	          output.value +=input[i].charCodeAt(0).toString(2) + " ";
+                }
+            }
+            }); 
+      </script>
           <!-- <p id="demo"></p>
           <script>
               var i=0;
