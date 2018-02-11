@@ -112,4 +112,9 @@ footer{
     display:block;
     width:0;
   }
-input {font-size:12px; width:200px;}
+input {
+    font-size:12px; width:200px;
+}
+.content{
+    opacity: 100%;
+}
