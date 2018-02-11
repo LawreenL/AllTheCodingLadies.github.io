@@ -27,3 +27,81 @@ footer{
     right: 0;
     clear: both;
 }
+.triangle-border {
+    position:relative;
+    padding:30px;
+    margin:1em 0 3em;
+    width:500px;
+    border:5px solid rgb(199, 124, 124);;
+    color:#333;
+    background:#fff;
+    /* css3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+  }
+  .triangle-border:before {
+    content:"";
+    position:absolute;
+    bottom:-20px; /* value = - border-top-width - border-bottom-width */
+    left:40px; /* controls horizontal position */
+    border-width:20px 20px 0;
+    border-style:solid;
+    border-color:rgb(199, 124, 124) transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
+  
+  /* creates the smaller  triangle */
+  .triangle-border:after {
+    content:"";
+    position:absolute;
+    bottom:-13px; /* value = - border-top-width - border-bottom-width */
+    left:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+    border-width:13px 13px 0;
+    border-style:solid;
+    border-color:#fff transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
+  .triangle-borderr {
+    position: relative;
+    padding:35px;
+    width: 500px;
+    margin:1em 0 3em;
+    border:5px solid rgb(199, 124, 124);;
+    color:#333;
+    background:#fff;
+    /* css3 */
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+  }
+  .triangle-borderr:before {
+    content:"";
+    position:absolute;
+    bottom:-20px; /* value = - border-top-width - border-bottom-width */
+    right:40px; /* controls horizontal position */
+    border-width:20px 20px 0;
+    border-style:solid;
+    border-color:rgb(199, 124, 124) transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
+  
+  /* creates the smaller  triangle */
+  .triangle-borderr:after {
+    content:"";
+    position:absolute;
+    bottom:-13px; /* value = - border-top-width - border-bottom-width */
+    right:47px; /* value = (:before left) + (:before border-left) - (:after border-left) */
+    border-width:13px 13px 0;
+    border-style:solid;
+    border-color:#fff transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+  }
