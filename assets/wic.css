@@ -154,12 +154,13 @@ input {
 }
 .app{
     width: 50%;
-    height: 50%;
+    height: auto;
 
 }
 .item{
+    height: auto;
 padding-left: 100px;
 padding-right: 190px;
-padding-top: 50px;
+padding-top: 90px;
+color:rgb(236, 204, 189);
 }
-
