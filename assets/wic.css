@@ -153,7 +153,6 @@ input {
     background-image: none;
 }
 .app{
-<<<<<<< HEAD
     width: 50%;
     height: 50%;
 
@@ -163,9 +162,4 @@ padding-left: 100px;
 padding-right: 190px;
 padding-top: 50px;
 }
-=======
-    width: 30%;
-    height: 30%;
-    
-}
->>>>>>> origin/master
+
