@@ -149,3 +149,8 @@ input {
 .carousel-control.right {
     background-image: none;
 }
+.app{
+    width: 30%;
+    height: 30%
+    
+}
