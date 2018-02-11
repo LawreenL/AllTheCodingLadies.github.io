@@ -15,8 +15,31 @@
     #section1 {padding-top:100px;height:500px;color: #fff; background:linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5)),url("images/giphy.gif");}
     #section2 {padding-top:50px;height:500px;color: #fff; background-color: #c3bad3;}
     #section3 {padding-top:50px;height:600px;color: #fff; background-color: #d19088;}
-    #section4 {padding-top:50px;height:600px;color: #fff; background-color: #c6b3c9;}
+    #section4 {padding-top:100px;height:600px;color: #fff; background-color: #c6b3c9;}
     
+    #retToTop {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(199, 124, 124);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid rgb(199, 124, 124);
+}
+
+#retToTop:hover {
+  background-color: #555;
+}
+         
     </style>  
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50";>
@@ -26,12 +49,34 @@
       <img class="bey" src="images/beyonce.png" >
     </h1>
 
-    <hr/>
-    <div id="a1">
+    <button onclick="topFunction()" id="retToTop" title="Return to Top">Home</button>
+      <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("retToTop").style.display = "block";
+    } else {
+        document.getElementById("retToTop").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+     <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top-->
+   <hr/>
+      <div id="a1">
     <a href="#section1" style="color:rgb(199, 124, 124);">Home</a>
     <a href="#section2" style="color:rgb(199, 124, 124);">Our App</a>
     <a href="#section3" style="color:rgb(199, 124, 124);">Services</a>
-    <a href="#section4" style="color:rgb(199, 124, 124);">About Us</a></div><hr/>
+    <a href="#section4" style="color:rgb(199, 124, 124);">About Us</a></div>
+      
+      <hr/>
       
     <div class="content"> 
     <div id="section1" class="container-fluid" >
@@ -71,8 +116,8 @@
   <h1>Who Run The World?</h1>
      <h2>Girls!</h2>
      <br><br>
-  <p>Girls can do anything with the right resources. According to research, <br>girls possess many of the qualities needed in coding. They have no differences in attention and memory abilities from men.<br> Unfortunately, current resources that introduce coding to girls are hard to find and intimidating.<br>
-    We want to bring the entirety of it to their fingertips with All The Coding Ladies.</p>
+  <h4>Girls can do anything with the right resources. According to research, <br>girls possess many of the qualities needed in coding. They have no differences in attention and memory abilities from men.<br> Unfortunately, current resources that introduce coding to girls are hard to find and intimidating.<br>
+    We want to bring the entirety of it to their fingertips with All The Coding Ladies.</h4>
   <!--https://www.sciencedirect.com/science/article/pii/S1010660X1630088X-->
 </div>
 
@@ -97,8 +142,8 @@
     <img class="app" src="images/home.png" alt="Home Page">
   </div>
   <div class="col-sm-6">
-    <h2>Intro</h2>
-    <h4>We --</h4>
+    <h2>Beyonce</h2>
+    <h4>She doesn't have too much to do with tech. But music draws people all over the world together and Beyonce's music has empowered women. She is the biggest pop sensation of our generation and we want her inspiration to influence young girls to embrace coding. </h4>
   </div>
 </div>
 <div class="item">
@@ -178,17 +223,19 @@
   </a>
 </div>
 
-<div id="section4" class="container-fluid">
+<div id="section4" class="container-fluid4">
   <h1>About Us</h1>
-  <p>We are four girls that want to introduce CS in an easy, non-intimidating way to our fellow peers. Having <br>struggled ourselves, we know how to overcome many of the obstacles as well as what resources would have helped<br> us if readily available. Drawing inspiration from the fiercely awesome Beyonce, we want to <br>inspire girls to take the first step into CS.</p>
+     <br>
+     <br>
+     <br>
+  <h4>We are four girls that want to introduce CS in an easy, non-intimidating way to our fellow peers. Having <br>struggled ourselves, we know how to overcome many of the obstacles as well as what resources would have helped<br> us if readily available. Drawing inspiration from the fiercely awesome Beyonce, we want to <br>inspire girls to take the first step into CS.</h4>
   
 </div>
 </div>  
-  <div class="content">
-  </div>
+<!--
+  <canvas id="demoCanvas" width="500" height="200"></canvas>-->
   <br>
-  <canvas id="demoCanvas" width="500" height="200"></canvas>
-  <br><br>
+      <p>Mabe with love at WiCHacks2018</p>
   <div id="footer"><p>Copyright &copy; AllTheCodingLadies</p></div>
 </body>
 </html>
