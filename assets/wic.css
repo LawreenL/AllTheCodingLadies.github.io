@@ -130,10 +130,12 @@ input {
  .bey:hover {
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
+     animation: play 0.8s steps(10) infinite;
         }
  .bey_flip:hover {
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
+     animation: play 0.8s steps(10) infinite;
         }
 .carousel-caption {
   position: relative;

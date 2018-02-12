@@ -1,2 +1,2 @@
 # AllTheCodingLadies.github.io
-This is a project for WiCHacks.
+This is a project for WiCHacks. We wanted to introduce coding in an easy, non-intimidating way to our peers. Having struggled ourselves, we can anticipate obstacles and offer solutions to overcome them. Drawing inspiration from the fiercely awesome Beyonce, we want to inspire girls to take the first step into coding.
